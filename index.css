@@ -1,0 +1,57 @@
+
+header{
+    height: 75px;
+    width: 100vh;
+    font-size: x-large;
+    font-family: sans-serif;
+    background-color: rgb(194, 9, 9);
+    font: bold;
+    text-align: center;
+    margin: 20 30 20 50;
+    border-radius: 10%;
+    
+}
+
+
+.blockquote{
+    max-width: fit-content;
+    margin: 10px 30px;
+    padding: 25px;
+    background: #f8fffe;
+    border: 1px solid #b0d2cb;
+    color:rgb(76, 125, 125);
+    box-sizing: border-box;
+    border-radius: 10%;
+}
+
+.blockquote--bordered{
+    border-left-width: 15px;
+}
+.blockquote--quoted::before{
+    content: "\201c";
+    font-size: 100px;
+    color:rgb(45, 150, 71);
+    display: block;
+    margin-bottom: -40px;
+    margin-top: -20px;
+
+}
+.blockquote__text{
+    font-family:Gelasio,sans-serif;
+    font-size: 1.15em;
+    line-height: 1.5em;
+    margin: 0;
+}
+.blockquote__text:not(:last-child){
+    margin-bottom: 1em;
+}
+.blockquote__text--credit{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+
+}
+
+.blockquote__text--credit::before{
+    content:"\2014\0020";
+}
